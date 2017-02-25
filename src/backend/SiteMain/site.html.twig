@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if debugbarRenderer is defined and debugbarRenderer is not empty %}
+        {{ debugbarRenderer.renderHead()|raw }}
+    {% endif %}
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/underscore-min.js"></script>
+    <script src="vendor/backbone-min.js"></script>
+    <script src="frontend/main.js"></script>
+</head>
+
+
+<body>
+{% block title %}
+SITE LAYOUT
+{% endblock %}
+{% block content %}
+{% endblock %}
+
+<div id="container">Loading...</div>
+{% if debugbarRenderer is defined and debugbarRenderer is not empty %}
+    {{ debugbarRenderer.render()|raw }}
+{% endif %}
+</body>
+</html>

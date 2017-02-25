@@ -1,0 +1,22 @@
+vendor/
+composer.phar
+/node_modules
+docs/html/
+var/cache/
+
+### IDE specific
+.idea
+nbroject
+.buildpath
+.project
+.settings
+*.sublime-project
+*.sublime-workspace
+tags
+
+### OS specific
+Thumbs.db
+.DS_Store
+
+### personal
+.zzz_hidden/

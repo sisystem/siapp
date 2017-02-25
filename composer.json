@@ -1,0 +1,23 @@
+{
+    "name": "si_app",
+    "description": "Test application for Si",
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/backend/",
+            "Var\\": "var/"
+        }
+    },
+
+    "require": {
+        "php": ">=7.1.1",
+        "resortx/si": "dev-master"
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://machel@bitbucket.org/resortx/si.git"
+        }
+    ]
+}
